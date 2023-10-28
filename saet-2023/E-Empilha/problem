@@ -1,0 +1,30 @@
+E: EMPILHA COPOS
+
+TEXTO
+
+Um professor de matemática que é fascinado por competições resolveu fazer uma dinâmica
+com a sua turma. Ele percebeu em que sua casa havia uma grande quantidade de copos, e
+optou por utilizá-los em sua próxima aula.
+
+Ele explicou da seguinte maneira para os seus alunos: Dado N copos (1 ≤ N ≤ 10000), eles
+devem determinal qual o maior valor de B tal que é possível formar um triângulo de base B
+utilizando no máximo N copos.
+
+Como exemplo, a figura abaixo mostra que, com no máximo N = 8 copos, é possível formar um
+triângulo de base B = 3:
+
+      X
+     X X
+    X X X
+
+Neste exemplo, 6 copos são usados e 2 são descartados.
+
+ENTRADA
+
+A entrada contém apenas um inteiro N (1 ≤ N ≤ 10000).
+
+SAÍDA
+
+Imprima o maior valor de B tal que é possível formar um triângulo de base B usando até N
+copos.
+

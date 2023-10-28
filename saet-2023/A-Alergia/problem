@@ -1,0 +1,41 @@
+A: ALERGIA
+
+TEXTO
+
+Alergia não é coisa só de humano não, a bicharada também sofre.
+
+Maya tem um cachorrinho parceiro e super animal chamado Thomy. Ele tem o costume de
+cantar de galo, mandando Maya lhe dar comida. Claro que tudo em "cachorrês", afinal, ele
+é um cachorro! Animal é quem não entende ele.
+
+Sempre forte como um touro, hoje Thomy amanheceu andando como uma barata tonta pela
+casa... deu zebra! Maya não poderia deixá-lo desamparado, pois não tem sangue de cobra e
+é uma mãe coruja com os seus bichinhos. Não titubeou: como uma lebre o levou para a
+veterinária.
+
+O doutor prescreveu uma nova ração, já que Thomy havia desenvolvido alergia a alguns
+ingredientes. Ofereceram uma ração lá do Peru, que era o olho da cara... mais caro que um
+boi! Nem que a vaca tussa que Maya iria pagar tudo aquilo.
+
+Ela procurou outra veterinária, e lá eles prescreveram uma ração bem mais barata, uma
+pechincha. Tão barata que ela desconfiou, e pediu para você confirmar se algum dos
+ingredientes da ração poderia causar uma reação no cachorrinho. Mostre quem é o bicho da
+programação, criando um programa que compare os ingredientes presentes na ração e as
+alergias do Thomy!
+
+ENTRADA
+
+A primeira linha tem apenas um inteiro (1 ≤ N ≤ 100), o número de ingredientes.
+
+A segunda linha contém N inteiros Ri (1 ≤ i ≤ N). Se Ri = 1, então a ração contém o
+ingrediente i. Se Ri = 0, então ela não contém o ingrediente i.
+
+A terceira linha contém N inteiros Ai, indicando se Thomy tem alergia ao ingrediente i.
+Se Ai = 1, então Thomy tem alergia ao ingrediente i. Se Ai = 0, então ele não tem alergia
+ao ingrediente i.
+
+SAÍDA
+
+Imprima "S" se Maya pode dar a ração para o Thomy.
+Imprima "N" se Maya não deve dar a ração para o Thomy.
+

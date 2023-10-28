@@ -1,0 +1,25 @@
+J: MEUZAMIGO
+
+TEXTO
+
+A universidade Blupen está oferecendo uma gincana com várias brincadeiras de premiações
+interessantes. Uma delas é a Meuzamigo e nosso amigo Manuel Gomes está decidido a ganhar.
+A brincadeira consiste em N pessoas conectadas a N-1 fios. O participante é o primeiro a
+se conectar a rede, em seguida os ajudantes da gincana se conectam para dar vida a
+brincadeira.
+
+Para vencer, é necessário que o participante diga qual é a distância mais longa entre ele
+mesmo e um ajudante qualquer. É garantido que todas as pessoas estejam conectadas na
+rede.
+
+ENTRADA
+
+A primeira linha da entrada contém o número de pessoas N (2 ≤ N ≤ 10^5).
+
+As próximas N-1 linhas contém A e B, as conexões entre cada participante.
+
+SAÍDA
+
+A saída deverá conter um número inteiro correspondente a distância mais longa entre
+Manoel Gomes e algum participante.
+

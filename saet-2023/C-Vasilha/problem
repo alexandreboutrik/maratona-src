@@ -1,0 +1,25 @@
+C: VASILHA ERRADA
+
+TEXTO
+
+Nathan é um menino apaixonado por triângulos, por conta disso em sua casa só tem vasilhas
+triangulares. Contudo, sua mãe Ana sempre faz panquecas circulares para o seu filho levar
+para escola. Como Nathan é ruim em matemática, ele nunca sabe qual o melhor recepiente
+para levar. Por sorte no seu material escolar há uma régua, conseguindo dessa forma medir
+os lados de todas as vasilhas da casa. Sendo assim, o seu trabalho será criar um programa
+que lê as medidas de Nathan e mostrá-lo quais são os raios limites que a panqueca pode
+ter para cada recepiente.
+
+ENTRADA
+
+A primeira linha de entrada contém o número N (1 ≤ N ≤ 1000) de vasilhas.
+
+As próximas N linhas conterá os valores de L1, L2, L3 (1 ≤ L1,L2,L3 ≤ 500) em cm
+representando as medidas realizadas por Nathan em cada recepiente. Considere que Nathan
+não erre as medidas e que a precisão pode alcançar duas casas decimais.
+
+SAÍDA
+
+A saída deverá conter N números, sendo um valor por linha, que serão os raios R máximos,
+com duas casas decimais, que a panqueca pode ter em cada vasilha apresentada por Nathan.
+

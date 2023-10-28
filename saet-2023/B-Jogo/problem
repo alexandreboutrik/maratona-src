@@ -1,0 +1,47 @@
+B: JOGO
+
+TEXTO
+
+Carlos e Pedro gostam muito de futebol e querem jogar uma partida um contra o outro. Como
+ambos são goleiros, eles precisam de jogadores no ataque e na defesa para completar o seu
+time.
+
+Para isso, eles têm uma lista de jogadores interessados em participar da partida,
+contendo os pontos de ataque e de defesa de todos. Um jogador com pontos de defesa maior
+que os pontos de ataque é um defensor; um jogador com pontos de ataque maiores ou iguais
+aos de defesa é um atacante; o talento de um jogador é dado pela soma de seus pontos de
+ataque com seus pontos de defesa.
+
+Para a divisão ser justa, a escolha dos jogadores será feita em rodadas. Em cada rodada,
+Carlos e Pedro escolherão um jogador cada para seus times. Na primeira rodada Carlos
+escolhe um jogador primeiro; na segunda rodada Pedro escolhe um jogador primeiro; e assim
+por diante. Caso o número de jogadores seja ímpar, um deles não será escolhido.
+
+A escolha de um jogador é feita pelos seguintes critérios:
+
+    Se um time já tiver mais atacantes do que defensores, será escolhido para o time o
+     defensor mais talentoso ainda não escolhido. Caso não haja mais defensores
+     disponíveis, será escolhido o atacante mais talentoso;
+
+    Se um time já tiver mais defensores do que atacantes, será escolhido para o time o
+     atacante mais talentoso ainda não escolhido. Caso não haja mais atacantes
+     disponíveis, será escolhido o defensor mais talentoso;
+
+    Se um time tiver a mesma quantidade de atacantes e defensores, será escolhido o
+     jogador mais talentoso ainda não escolhido. Se houver mais de um jogador ainda não
+     escolhido com o maior talento, será escolhido um atacente.
+
+Sua tarefa é determinar o talento médio do time mais talentoso.
+
+ENTRADA
+
+A primeira linha da entrada contém o número N de jogadores a serem escolhidos
+(2 ≤ N ≤ 10^5). Cada uma das N linhas seguintes contém dois inteiros: Ki e Mi
+(0 ≤ Ki ≤ 99), (0 ≤ Mi ≤ 99), sendo, respectivamente, os pontos de ataque e defesa do
+jogador i.
+
+SAÍDA
+
+A saída deverá conter uma linha com o talento médio do time mais talentoso, com
+exatamente duas casas decimais.
+

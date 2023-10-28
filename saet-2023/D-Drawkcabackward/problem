@@ -1,0 +1,42 @@
+D: DRAWKCABACKWARD
+
+TEXTO
+
+Uma das mais divertidas tarefas de um maratonista da programação é a escolha do nome da
+sua equipe. Depois de muito debate, sua equipe decidiu escolher o nome da seguinte
+maneira:
+
+    O nome deverá ser uma substring não vazia de uma dada string s;
+
+    O nome deverá ser palíndrome (isto é, deve ser igual quando lido da esquerda para a
+     direita e da direita para a esquerda);
+
+    Cada letra do alfabeto a, b, ..., z tem um valor Va, Vb, ..., Vz. O valor total do
+     nome escolhido é a soma dos valores de suas letras. O nome escolhido deverá ter o
+     maior valor total possível.
+
+Como exemplo, considere a string s = xabaydcbbcdyz e os valores Va = 20, Vb = -10,
+Vc = 15, Vd = 11, Vx = 20, Vy = -20 e Vz = 20. Alguns nomes que poderiam ser escolhidos
+são:
+
+    aba, com valor total Va + Vb + Va = 20 - 10 + 20 = 30;
+    dcbbcd, com valor total 32;
+    ydcbbcdy, com valor total -8;
+    Outras substrings palíndromes de s.
+
+Neste exemplo, a substring palíndrome dcbbcd tem o maior valor total possível (32), e
+portanto este será o nome da equipe.
+
+Dada a string s e os valores de cada letra, ajude a escolher o nome da sua equipe!
+
+ENTRADA
+
+A primeira linha contém 26 valores inteiros Va, Vb, ..., Vz (entre -1000 e 1000 cada)
+indicando o valor de cada letra do alfabeto.
+
+A segunda linha contém a string s (1 ≤ |s| ≤ 5*10^5), contendo apenas letras minúsculas.
+
+SAÍDA
+
+Imprima uma única linha contendo o valor total do nome escolhido pela equipe.
+
