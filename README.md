@@ -25,8 +25,8 @@ Welcome to maratona-src repository, where you can find my source code solutions 
 | Problem Title | Solved Without Internet | Solved With Internet |
 |:-------------:|:-----------------------:|:--------------------:|
 | A - Alergia   | ✔️                       |                      |
-| C - Vasilha   | ✔️                       | ✔️                    |
-| E - Empilha   |                         |                      |
+| C - Vasilha   |                         | ✔️                    |
+| E - Empilha   | ✔️                       |                      |
 | F - Falco     | ✔️                       |                      |
 | I - Lista     | ✔️                       |                      |
 | J - Meuzamigo | ✔️                       |                      |
@@ -45,7 +45,7 @@ Welcome to maratona-src repository, where you can find my source code solutions 
 
 In this repository, each problem is organized within its dedicated directory, following a structured layout. Below is an example of the directory tree for a problem:
 
-\```
+```
 A-Alergia (e.g., saet-2023/A-Alergia)
 │
 ├── problem                         <- Problem Statement
@@ -57,7 +57,7 @@ A-Alergia (e.g., saet-2023/A-Alergia)
 │   ├── input2                      <- Input File 2
 │   ├── output2                     <- Expected Output for Input 2
 │   ├── ...                         <- Additional Test Cases
-\```
+```
 
 - **Problem Directory:** The problem's unique directory containing all related files.
 - **problem:** A file that describes the problem statement for this specific challenge.
@@ -76,9 +76,9 @@ Included in the root directory of this repository, you'll find a handy `main.sh`
 
 To use the `main.sh` script, follow this syntax:
 
-\```shell
+```shell
 ./main.sh <marathon> <problem>
-\```
+```
 
 - `<marathon>`: Replace this with the specific marathon or contest name (e.g., saet-2023).
 - `<problem>`: Replace this with the problem code or identifier (e.g., "A" for Problem A).
@@ -87,9 +87,9 @@ To use the `main.sh` script, follow this syntax:
 
 For instance, to compile and test the solution for Problem A (A-Alergia) of the saet-2023 marathon, you can use the following command:
 
-\```shell
+```shell
 ./main.sh saet-2023 A
-\```
+```
 
 The script will automatically locate the problem directory, compile your source code solution, and test it against the provided test cases in the `test` directory.
 
