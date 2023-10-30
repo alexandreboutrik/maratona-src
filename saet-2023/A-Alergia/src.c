@@ -27,7 +27,7 @@ Alloc(U8 **V, Cst U32 N)
 }
 
 Fn In U0
-Exit(wchar_t C, U8 **V, U8 **W)
+Exit(S16 C, U8 **V, U8 **W)
 {
     printf("%lc\n", C);
 
