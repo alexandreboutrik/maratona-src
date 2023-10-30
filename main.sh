@@ -50,7 +50,7 @@ if [ ! -d ./bin ]; then
 fi
 
 Print 34 \* Compilando o código \(${DIRP}/src.c\)
-gcc ${DIRC}/src.c -o ./bin/exe -lm
+gcc ${DIRC}/src.c -o ./bin/exe -lm -W -Wall -Wextra
 CheckError $? Erro de compilação
 
 LISTA_IN=$(${LS_CMD} ${DIRT} | grep "input")
