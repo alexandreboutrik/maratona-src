@@ -22,7 +22,7 @@ main(void)
     Word    *S; 
     S16      c;
     U16      N;
-    Reg U16  i, j;
+    Reg U16  i, j, k, inc;
 
     scanf("%" SCNu16, &N);
 
@@ -32,18 +32,18 @@ main(void)
     for (i = 0; i < N; i++)
         scanf("%ls", &(S[i].S[0]));
 
-    for (i = 'a'; i <= 'x';)
+    for (i = 'a', inc = 4; i <= 'x'; i += inc)
     {
+        if (i == 'u') inc--;
+
         for (j = 0; j < N; j++)
         {
             c = tolower(S[j].S[0]);
 
-            if (c == i || c == i+1 || c == i+2 || c == i+3)
-                printf("%ls\n", S[j].S);
+            for (k = 0; k < inc; k++)
+                if (c == i+k)
+                    printf("%ls\n", S[j].S);
         }
-
-        if (i == 'u')   i += 3;
-        else            i += 4;
     }
 
     free(S);
