@@ -12,8 +12,8 @@
 int
 main(void)
 {
-    U32      N, Ni, A, B, Maior;
-    Byte    *V;
+    U32      N, Ni, A, B;
+    Byte    *V, Maior;
     Reg U32  i;
 
     scanf("%" SCNu32, &N);
