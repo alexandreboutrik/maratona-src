@@ -49,8 +49,12 @@ if [ ! -d ./bin ]; then
 	CheckError $? Erro ao criar o diretório ./bin
 fi
 
+if [[ "${maratona}" =~ "leet" ]]; then
+	EXTRAFLAGS="-I./leetcode/common/"
+fi
+
 Print 34 \* Compilando o código \(${DIRP}/src.c\)
-gcc ${DIRC}/src.c -o ./bin/exe -lm -W -Wall -Wextra
+gcc ${DIRC}/src.c -o ./bin/exe -lm -W -Wall -Wextra ${EXTRAFLAGS}
 CheckError $? Erro de compilação
 
 LISTA_IN=$(${LS_CMD} ${DIRT} | grep "input")
