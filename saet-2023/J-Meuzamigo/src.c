@@ -12,13 +12,13 @@
 int
 main(void)
 {
-    U32      N, Ni, A, B;
-    Byte    *V, Maior;
+    U32     *V;
+    U32      N, Ni, A, B, Maior, Tmp;
     Reg U32  i;
 
     scanf("%" SCNu32, &N);
 
-    if ((V = (Byte *) calloc(N, sizeof(Byte))) == NULL)
+    if ((V = (U32 *) calloc(N, sizeof(U32))) == NULL)
         err(errno, "calloc");
 
     Ni = (N - 1);
@@ -26,10 +26,15 @@ main(void)
     {
         scanf("%" SCNu32 " %" SCNu32, &A, &B);
 
-        V[B-1] = V[A-1] + 1;
+        A--; B--;
 
-        if (V[B-1] > Maior)
-            Maior = V[B-1];
+        Tmp = V[A] + 1;
+
+        if (Tmp < V[B] || V[B] == 0)
+            V[B] = V[A] + 1;
+
+        if (V[B] > Maior)
+            Maior = V[B];
     }
 
     printf("%" PRIu32 "\n", Maior);
