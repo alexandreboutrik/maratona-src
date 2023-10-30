@@ -20,7 +20,7 @@ int
 main(void)
 {
     Word    *S; 
-    S16      c1, c2, c3, c4, fc;
+    S16      c;
     U16      N;
     Reg U16  i, j;
 
@@ -36,9 +36,9 @@ main(void)
     {
         for (j = 0; j < N; j++)
         {
-            fc = tolower(S[j].S[0]);
+            c = tolower(S[j].S[0]);
 
-            if (fc == i || fc == i+1 || fc == i+2 || fc == i+3)
+            if (c == i || c == i+1 || c == i+2 || c == i+3)
                 printf("%ls\n", S[j].S);
         }
 
