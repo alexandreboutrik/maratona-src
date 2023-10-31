@@ -83,6 +83,10 @@ while [ $i -le ${QNT_IN} ]; do
 	RESULT=$(cat ${DIRT}/${FILE_IN} | ./bin/exe)
 	CheckError $? Erro ao testar o código com a entrada de "${FILE_IN}"
 
+	if [ "${RESULT:0-1}" == " " ]; then
+		RESULT=${RESULT%?}
+	fi
+
 	if [ "${EXPECTED}" != "${RESULT}" ]; then
 		Print 33 × Incorreto
 		Print 0 =====
